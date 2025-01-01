@@ -14,3 +14,6 @@ pup.once('myevent',function(msg) {
 
 //el metodo emit nos permite precisamente emitir un evento.
 pup.emit('myevent','Soy un emisor de eventos')
+pup.emit('myevent','volviendo a emitir')
+pup.removeAllListeners('myevent')
+pup.removeAllListeners('myevent','colviendo a emitir por tercera vez')
